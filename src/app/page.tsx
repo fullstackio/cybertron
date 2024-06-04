@@ -9,13 +9,14 @@ export const metadata: Metadata = {
     keywords:'about, your website, company, information'
 }
 
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-start p-24">
       <div className="p-10">
       <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/assets/images/next.svg"
+          src="/cybertron/assets/images/next.svg"
           alt="Next.js Logo"
           width={190}
           height={37}
