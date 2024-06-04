@@ -1,14 +1,15 @@
 {
   "name": "my-test-app1",
   "version": "0.1.0",
-  "homepage": "https://fullstackio.github.io/react-gh-pages",
+  "homepage": "https://fullstackio.github.io/cybertron",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "predeploy": "npm run build",
-    "build": "gh-pages -d build",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "gh-pages": "^6.1.1",
