@@ -1,6 +1,7 @@
 'use client'
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import './header.css';
 
 export default function Header(){
 
@@ -10,7 +11,7 @@ export default function Header(){
           <div className="header-container">
             <div className="header-row">
                 <div className="site-header-logo">
-                    Logo
+                    <Link href="/">Cybertron</Link>
                 </div>
                 <nav>
                     <ul>
