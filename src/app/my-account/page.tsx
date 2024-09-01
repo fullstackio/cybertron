@@ -1,19 +1,16 @@
 import { Metadata } from "next";
-import Link from "next/link";
 
-
-export const metadata:Metadata = {
-    title:'Cybernest | Mt Admin Login',
+export const metadata: Metadata = {
+    title:'Cybernest | About Us',
     description:'This is the about page of Your Website Name. Learn more about us and what we do.',
     keywords:'about, your website, company, information'
 } 
 
-export default function MTLogin(){
+export default function MyAccount(){
+
     return(
         <div>
-            <h1>Welcome to Mt login</h1>
-
-            <Link href="/">Back to Home</Link>
+            <h1>Welcome to My Account</h1>
         </div>
     )
 }

@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { Metadata } from "next";
+import {Button} from "@nextui-org/react";
 
 export const metadata: Metadata = {
     title:'Cybernest | Welcome to next generation web application',
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start p-24">
+    <div >
       <div className="p-10">
       <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
@@ -26,7 +27,17 @@ export default function Home() {
       
       <h1>Home page</h1>
 
-      <button></button>
-    </main>
+      <div className="flex gap-4 items-center">
+      <Button size="sm">
+        Small
+      </Button>  
+      <Button size="md">
+        Medium
+      </Button>  
+      <Button size="lg">
+        Large
+      </Button>  
+    </div>
+    </div>
   );
 }

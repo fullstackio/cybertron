@@ -1,0 +1,194 @@
+.signinupWrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../../public/assets/images/pexels-mattycphoto-11266999.jpg);
+    background-size: cover;
+}
+.auth_wrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background:rgba(255, 255, 255, .8);
+}
+.backArrow_left{
+    width: 42px;
+    height: 42px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    img{
+        width: 18px;
+        height: auto;
+    }
+}
+.login_wrapper{
+    background:rgba(255, 255, 255);
+    backdrop-filter: blur(7px);
+    max-width: 991px;
+    border-radius: 30px;
+    width: 100%;
+    display: flex;
+    .left_content{
+        background-image: url(../../../../public/assets/images/pexels-mariia-kukhtina-266258379-16413411.jpg);
+        background-size: cover;
+        min-height: 600px;
+        width: 50%;
+        border-radius: 30px 0 0 30px;
+        padding: 45px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        h1{
+            color: #fff;
+            font-size: 38px;
+            font-weight: 200;
+        }
+    }
+    .right_form{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 55px 75px;
+        .form_header,
+        .login_main_form{
+            width: 100%;
+        }
+    }
+}
+.form_header{
+    margin: 0 0 30px 0;
+    h2{
+        color: rgb(42 85 50);
+        font-size: 32px;
+        line-height: 35px;
+        margin: 0 0 0px 0;
+        font-weight: 700;
+    }
+    span{
+        font-size: 18px;
+        color: #cfd3cf;
+    }
+}
+.login_main_form{
+
+    .input_field_wrapper{
+        width: 100%;
+        margin: 0 0 20px 0;
+        
+        
+    }
+}
+.form_footer{
+    
+    .ft_top{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        font-size: 13px;
+        margin: 0 0 35px 0;
+        a{
+            color: #325147!important;
+            font-weight: 600; 
+        }
+        label{
+            color: #a4a5a4;
+            display: flex;
+            align-items: center;
+            
+        }
+    }
+    .ft_mid{
+        display: flex;
+        justify-content: center;
+        margin: 0 0 20px 0;
+        flex-direction: column;
+        button.signupBtn{
+            width: 100%;
+            border-radius: 30px;
+            background-color:rgb(64 116 77);
+            display: flex;
+            align-items: center;
+            height: 40px;
+            font-size: 15px;
+            text-transform: uppercase;
+            justify-content: center;
+            color: rgb(191 231 201);
+            outline: none;
+            box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+        }
+    }
+}
+.ft_bot{
+    display: flex;
+    justify-content: center;
+    color: #a4a5a4;
+    font-size: 14px;
+    a{
+        color: #325147!important;
+        font-weight: 600; 
+        margin: 0 0 0 3px;
+        display: flex;
+    }
+}
+.loginWithSocial{
+    width: 100%;
+    margin: 35px 0 10px 0;
+    position: relative;
+    .alterSocial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 35px 0;
+        &::after{
+            content: "";
+            right: 0;
+            height: 1px;
+            background-color: #325147;
+            width: 80px;
+            position: absolute;
+        }
+        &::before{
+            content: "";
+            left: 0;
+            height: 1px;
+            background-color: #325147;
+            width: 80px;
+            position: absolute;
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li{
+            margin: 0 10px;
+            a{
+                width: 40px;
+                height: 40px;
+                display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+                box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+            }
+        }
+    }
+}
+

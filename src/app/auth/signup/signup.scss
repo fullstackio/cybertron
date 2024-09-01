@@ -1,0 +1,200 @@
+.signinupWrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../../public/assets/images/pexels-mattycphoto-11266999.jpg);
+    background-size: cover;
+}
+.auth_wrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background:rgba(255, 255, 255, .8);
+}
+.backArrow_left{
+    width: 42px;
+    height: 42px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    img{
+        width: 18px;
+        height: auto;
+    }
+}
+.login_wrapper{
+    background:rgba(255, 255, 255);
+    backdrop-filter: blur(7px);
+    max-width: 991px;
+    border-radius: 30px;
+    width: 100%;
+    display: flex;
+    .left_content{
+        background-image: url(../../../../public/assets/images/pexels-mariia-kukhtina-266258379-16413411.jpg);
+        background-size: cover;
+        min-height: 600px;
+        width: 40%;
+        border-radius: 30px 0 0 30px;
+        padding: 45px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        h1{
+            color: #fff;
+            font-size: 38px;
+            font-weight: 200;
+        }
+    }
+    .right_form{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 55px 75px;
+        .form_header,
+        .registration_main_form{
+            width: 100%;
+        }
+    }
+}
+.form_header{
+    margin: 0 0 30px 0;
+    h2{
+        color: rgb(42 85 50);
+        font-size: 32px;
+        line-height: 35px;
+        margin: 0 0 0px 0;
+        font-weight: 700;
+    }
+    span{
+        font-size: 18px;
+        color: #cfd3cf;
+    }
+}
+.registration_main_form{
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        .col-auto-6{
+            width: 50%;
+            padding: 0 15px;
+        }
+        .col-auto-12{
+            width: 100%;
+            padding: 0 15px;
+        }
+    }
+    
+    
+
+    .input_field_wrapper{
+        width: 100%;
+        margin: 0 0 20px 0;
+        
+        
+    }
+}
+.form_footer{
+    width: 100%;
+    .ft_top{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        font-size: 13px;
+        margin: 0 0 35px 0;
+        a{
+            color: #325147!important;
+            font-weight: 600; 
+        }
+        label{
+            color: #a4a5a4;
+            display: flex;
+            align-items: center;
+            input[type='checkbox']{
+                margin: 0 5px 0 0;
+            }
+        }
+    }
+    .ft_mid{
+        display: flex;
+        justify-content: center;
+        margin: 0 0 20px 0;
+        flex-direction: column;
+        button.signupBtn{
+            width: 100%;
+        }
+    }
+}
+.ft_bot{
+    display: flex;
+    justify-content: center;
+    color: #a4a5a4;
+    font-size: 14px;
+    a{
+        color: #325147!important;
+        font-weight: 600; 
+        margin: 0 0 0 3px;
+        display: flex;
+    }
+}
+.loginWithSocial{
+    margin:0 35px;
+    position: relative;
+    padding: 35px 0 20px 0;
+    .alterSocial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 35px 0;
+        &::after{
+            content: "";
+            right: 0;
+            height: 1px;
+            background-color: #325147;
+            width: 80px;
+            position: absolute;
+        }
+        &::before{
+            content: "";
+            left: 0;
+            height: 1px;
+            background-color: #325147;
+            width: 80px;
+            position: absolute;
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li{
+            margin: 0 10px;
+            a{
+                width: 40px;
+                height: 40px;
+                display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+                box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2);
+            }
+        }
+    }
+}
+
