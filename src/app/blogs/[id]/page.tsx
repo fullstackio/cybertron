@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useParams } from 'next/navigation';
 import axios, { AxiosResponse, AxiosError } from "axios";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 interface singlePostModel {
   id: string;
@@ -13,10 +13,9 @@ interface singlePostModel {
 
 export default function Blog() {
   const [singlePost, setSinglePost] = useState<singlePostModel | null>(null);
-  
   const { id } = useParams();
 
-  const fetchPost = async () => {
+  const fetchPost = useCallback(async () => {
     try {
       const postSingleResponse: AxiosResponse = await axios.get(`https://dummyapi.online/api/blogposts/${id}`);
       console.log("My API Data ==> ", postSingleResponse.data);
@@ -26,11 +25,11 @@ export default function Blog() {
     } finally {
       console.log('Data is loaded.');
     }
-  }
+  }, [id]); // Include 'id' in the dependency array
 
   useEffect(() => {
     fetchPost();
-  }, [id]);
+  }, [fetchPost]); // Now fetchPost is memoized, so it can be safely included as a dependency
 
   return (
     <div>
