@@ -42,8 +42,11 @@ export default function Blog() {
           {/* Render other fields as necessary */}
         </div>
       ) : (
-        <p><div className="loader-para"></div></p>
+        <div className="loader-para"></div> 
       )}
     </div>
   );
 }
+
+
+
